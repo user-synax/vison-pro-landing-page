@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.apple.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Apple Vision Pro | Landing Page | Ayush Developer</title>
+</head>
+
+<body>
+    <!-- Desktop Navbar -->
+    <nav>
+        <h1 id="logo">Apple</h1>
+        <div class="links">
+            <a href="#home" class="active">Home</a>
+            <a href="#tech-spec">Tech Specs</a>
+            <a href="#inside-box">Inside Box</a>
+        </div>
+        <button>Buy Now</button>
+        <div class="menu">
+            <i class="fa-solid fa-bars" onclick="document.getElementById('openmenu').showModal()"></i>
+        </div>
+    </nav>
+
+
+    <!-- Mobile Navbar -->
+    <dialog id="openmenu">
+        <div class="close">
+            <i class="fa-solid fa-x" onclick="document.getElementById('openmenu').close()"></i>
+        </div>
+        <a href="#home" class="active" onclick="document.getElementById('openmenu').close()">Home</a>
+        <a href="#tech-spec" onclick="document.getElementById('openmenu').close()">Tech Specs</a>
+        <a href="#inside-box" onclick="document.getElementById('openmenu').close()">Inside Box</a>
+    </dialog>
+
+    <!-- Hero Section -->
+
+    <div class="content" id="home">
+        <img src="./Assets/Images/avp-hero.png" alt="vision pro">
+        <button>Buy Now</button>
+    </div>
+
+    <!-- images Grid -->
+
+    <div class="img-grid">
+        <div class="box-1" style="grid-area: box1"></div>
+        <div class="box-2" style="grid-area: box2"></div>
+        <div class="box-3" style="grid-area: box3"></div>
+    </div>
+
+
+    <!-- Tech Sepecs Section -->
+
+    <section class="tech-spec" id="tech-spec">
+
+        <div class="head">
+            <h1>Tech Specifications</h1>
+            <img src="https://www.apple.com/v/apple-vision-pro/h/images/specs/hero__cvgr5aj1ttsi_large.jpg"
+                alt="Apple Vision Pro">
+        </div>
+
+        <div class="info">
+            <div class="left">Capacity</div>
+            <div class="right">
+                <ul>
+                    <li>256GB</li>
+                    <li>512GB</li>
+                    <li>1TB</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="left">Display</div>
+            <div class="right">
+                <ul>
+                    <li>23 million pixels</li>
+                    <li>3D display system</li>
+                    <li>Micro‑OLED</li>
+                    <li>7.5‑micron pixel pitch</li>
+                    <li>92% DCI‑P3</li>
+                    <li>Supported refresh rates: 90Hz, 96Hz, 100Hz</li>
+                    <li>Supports playback multiples of 24fps and 30fps for judder‑free video</li>
+                    <br>
+                    <li style="font-weight: 700">Video Mirroring</li>
+                    <li>Up to 720p AirPlay for mirroring your view in Apple Vision Pro to any AirPlay‑enabled device,
+                        including iPhone, iPad, Mac, Apple TV (2nd generation or later), or AirPlay‑enabled smart TV
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="info">
+            <div class="left">Chips</div>
+            <div class="right right-chips">
+
+                <div class="top-img-box">
+                    <img src="https://www.apple.com/v/apple-vision-pro/h/images/specs/chip__wemzm828a76q_large.jpg">
+                    <ul>
+                        <li>8‑core CPU with 4 performance cores and 4 efficiency cores</li>
+                        <li>10‑core GPU</li>
+                        <li>16‑core Neural Engine</li>
+                        <li>16GB unified memory</li>
+                    </ul>
+                </div>
+
+                <div class="bottom-img-box">
+                    <img
+                        src="https://www.apple.com/v/apple-vision-pro/h/images/specs/chip_memory__b9rqq62d77yq_large.jpg">
+                    <ul>
+                        <li>12‑millisecond photon‑to‑photon latency</li>
+                        <li>256GB/s memory bandwidth</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="left">Camera</div>
+            <div class="right">
+                <ul>
+                    <li>Stereoscopic 3D main camera system</li>
+                    <li>Spatial photo and video capture</li>
+                    <li>18 mm, ƒ/2.00 aperture</li>
+                    <li>6.5 stereo megapixels</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="left">Sensors</div>
+            <div class="right">
+                <ul>
+                    <li>Two high‑resolution main cameras</li>
+                    <li>Six world‑facing tracking cameras</li>
+                    <li>Four eye‑tracking cameras</li>
+                    <li>TrueDepth camera</li>
+                    <li>LiDAR Scanner</li>
+                    <li>Four inertial measurement units (IMUs)</li>
+                    <li>Flicker sensor</li>
+                    <li>Ambient light sensor</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Tech Spec Section End -->
+
+    <!-- Inside The Box Grid Layout -->
+
+    <section class="inside-box" id="inside-box">
+        <h1>Inside The Box</h1>
+        <div class="items-grid">
+            <div class="item item-main" style="grid-area: item1">
+                <img src="https://www.apple.com/v/apple-vision-pro/h/images/specs/itb_apple_vision_pro__btfvkzf3t0r6_large_2x.jpg"
+                    alt="Apple Vision Pro">
+                <h4>Apple Vision Pro
+                    (Includes Light Seal, Light Seal
+                    Cushion, and Solo Knit Band)</h4>
+            </div>
+            <div class="item" style="grid-area: item2">
+                <img src="https://www.apple.com/v/apple-vision-pro/h/images/specs/itb_cover__fmm1o03zrdaq_large.jpg" alt="">
+                <h4>Cover</h4>
+            </div>
+            <div class="item" style="grid-area: item3">
+                <img src="https://www.apple.com/v/apple-vision-pro/h/images/specs/itb_dual_loop_band__dugd41q8oy2q_large.jpg" alt="">
+                <h4>Dual Loop Band</h4>
+            </div>
+            <div class="item" style="grid-area: item4">
+                <img src="https://www.apple.com/v/apple-vision-pro/h/images/specs/itb_battery__e653v9of932a_large.jpg" alt="">
+                Battery
+            </div>
+            <div class="item" style="grid-area: item5">
+                <img src="https://www.apple.com/v/apple-vision-pro/h/images/specs/itb_light_seal_cushion__gaxy00nsfyye_large.jpg" alt="">
+                <h4>Light Seal Cushion</h4>
+            </div>
+            <div class="item" style="grid-area: item6">
+                <img src="https://www.apple.com/v/apple-vision-pro/h/images/specs/itb_polishing_cloth__eusfvgmzqh0m_large.jpg" alt="">
+                <h4>Polishing Cloth</h4>
+            </div>
+            <div class="item" style="grid-area: item7">
+                <img src="https://www.apple.com/v/apple-vision-pro/h/images/specs/itb_charge_cable__fwq1ox0tq0ii_large.jpg" alt="">
+                <h4>Charging Cable</h4>
+            </div>
+        </div>
+    </section>
+
+
+
+<footer style="text-align: center; border: 1px solid rgba(0, 0, 0, 0.3); border-radius: 24px; margin: 20px; background-color: rgb(216, 216, 216);">
+    <h2 style="font-family: 'Poppins'; font-weight: 400;">Made By <a href="https://github.com/user-synax" target="_blank">Ayush</a> | Learning Project</h2>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
